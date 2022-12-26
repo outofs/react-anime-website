@@ -22,7 +22,7 @@ const Header = () => {
       ) {
         headerRef.current?.classList.add("shrink");
       } else {
-        headerRef.current?.classList.add("shrink");
+        headerRef.current?.classList.remove("shrink");
       }
     };
     window.addEventListener("scroll", shrinkHeader);
@@ -39,7 +39,7 @@ const Header = () => {
             src={require("../../assets/1200px-Sharingan_triple.png")}
             alt=""
           />
-          <Link to="/">Anime</Link>
+          <Link to="/">Sanime</Link>
         </div>
         <ul className="header__nav">
           {headerNav.map((e, i) => (

@@ -15,6 +15,10 @@ export interface AnimeCard {
   type: string;
 }
 
+export interface AnimeCardProps {
+  item: AnimeCard;
+}
+
 export interface DataType {
   data: AnimeCard[];
   meta: any;
@@ -22,4 +26,11 @@ export interface DataType {
 
 export interface Genre {
   _id: string;
+}
+
+export interface MovieListPropsType {
+  getMovies: any;
+  genre?: string;
+  page?: number;
+  size?: number;
 }

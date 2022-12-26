@@ -17,10 +17,35 @@ export const animeDbApi = createApi({
     getGenres: builder.query<Genre[], string>({
       query: () => "/genre",
     }),
-    getTop20Anime: builder.query<DataType, string>({
-      query: () => "/anime?page=1&size=20&sortBy=ranking&sortOrder=asc",
+    getTop10Anime: builder.query<
+      DataType,
+      { genre?: string; page?: number; size?: number }
+    >({
+      query: (arg) => {
+        const { page, size } = arg;
+        return {
+          url: `/anime?page=${page}&size=${size}&sortBy=ranking&sortOrder=asc`,
+          params: { page, size },
+        };
+      },
+    }),
+    getAnimeByGenre: builder.query<
+      DataType,
+      { genre?: string; page?: number; size?: number }
+    >({
+      query: (arg) => {
+        const { genre, page, size } = arg;
+        return {
+          url: `/anime?page=${page}&size=${size}&genres=${genre}`,
+          params: { genre, page, size },
+        };
+      },
     }),
   }),
 });
 
-export const { useGetGenresQuery, useGetTop20AnimeQuery } = animeDbApi;
+export const {
+  useGetGenresQuery,
+  useGetTop10AnimeQuery,
+  useGetAnimeByGenreQuery,
+} = animeDbApi;

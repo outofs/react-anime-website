@@ -4,11 +4,14 @@ import Header from "../components/header/Header";
 import { Genre, AnimeCard } from "../interfaces";
 import {
   useGetGenresQuery,
-  useGetTop20AnimeQuery,
+  useGetTop10AnimeQuery,
 } from "../redux/services/animeDB";
 
 const Home = () => {
-  const { data, isFetching, error } = useGetTop20AnimeQuery("");
+  const { data, isFetching, error } = useGetTop10AnimeQuery({
+    page: 1,
+    size: 10,
+  });
 
   const [endPoint, setEndPoint] = useState<string>("");
   const [container, setContainer] = useState<AnimeCard[] | undefined>([]);

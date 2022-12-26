@@ -1,0 +1,97 @@
+@use "../../scss/" as *;
+
+.hero {
+  margin-bottom: 3rem;
+
+  &__item {
+    background-image: url("../../assets/1625687793_20-phonoteka-org-p-anime-art-kurenie-krasivo-21.png");
+    padding: 9rem 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      @include overlay();
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background-image: linear-gradient(to top, $body-bg, rgba($black, 0));
+    }
+
+    &__content {
+      @include flex(center, center);
+      padding: 0rem 5rem;
+
+      &::after {
+        content: "";
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 30%;
+        height: 50%;
+
+        @include mobile() {
+          width: 0%;
+          height: 0%;
+        }
+      }
+
+      @include mobile() {
+        text-align: center;
+      }
+
+      &__info {
+        width: 55%;
+        padding: 0 3rem;
+        position: relative;
+
+        @include tablet {
+          width: 100%;
+        }
+
+        & > * ~ * {
+          margin-top: 3rem;
+        }
+
+        .title {
+          font-size: 5rem;
+          font-weight: 700;
+          line-height: 1;
+
+          @include tablet {
+            font-size: 4rem;
+          }
+        }
+
+        .overview {
+          font-weight: 700;
+        }
+
+        .btns {
+          position: relative;
+        }
+
+        .btns > * ~ * {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}

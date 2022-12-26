@@ -1,0 +1,62 @@
+@use "../../scss/" as *;
+.footer {
+  background-image: url("../../assets/1652301794_1-celes-club-p-smert-anime-art-krasivo-1.jpg");
+  position: relative;
+  padding: 6rem 2rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__content {
+    max-width: 1000px;
+
+    &__logo {
+      @include flex(center, center);
+      margin-bottom: 3rem;
+      position: relative;
+    }
+
+    &__menus {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      @include mobile {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    &__menu {
+      @include flex(flex-start, flex-start);
+      flex-direction: column;
+      margin-top: 1rem;
+
+      font-size: 1.5rem;
+      font-weight: 600;
+
+      & > * ~ * {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include overlay();
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to bottom, $body-bg, rgba($black, 0));
+  }
+}

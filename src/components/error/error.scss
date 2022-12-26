@@ -1,0 +1,11 @@
+@use "../../scss/" as *;
+
+.error {
+  width: 100%;
+  @include flex(center, center);
+  flex-direction: column;
+
+  h4 {
+    font-weight: 300;
+  }
+}
