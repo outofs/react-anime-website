@@ -1,5 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { Genre, DataType } from "../../interfaces";
+import { UniqueESSymbolType } from "typescript";
+import { Genre, DataType, AnimeCard } from "../../interfaces";
 
 export const animeDbApi = createApi({
   reducerPath: "animeDbApi",
@@ -17,6 +18,7 @@ export const animeDbApi = createApi({
     getGenres: builder.query<Genre[], string>({
       query: () => "/genre",
     }),
+
     getTop10Anime: builder.query<
       DataType,
       { genre?: string; page?: number; size?: number }
@@ -29,6 +31,7 @@ export const animeDbApi = createApi({
         };
       },
     }),
+
     getAnimeByGenre: builder.query<
       DataType,
       { genre?: string; page?: number; size?: number }
@@ -41,6 +44,14 @@ export const animeDbApi = createApi({
         };
       },
     }),
+
+    getAnimeBySearch: builder.query<DataType, string>({
+      query: (endpoint: string) => `/anime?page=1&size=40&search=${endpoint}`,
+    }),
+
+    getAnimeById: builder.query<AnimeCard, string>({
+      query: (id: string) => `/anime/by-id/${id}`,
+    }),
   }),
 });
 
@@ -48,4 +59,6 @@ export const {
   useGetGenresQuery,
   useGetTop10AnimeQuery,
   useGetAnimeByGenreQuery,
+  useGetAnimeBySearchQuery,
+  useGetAnimeByIdQuery,
 } = animeDbApi;

@@ -4,8 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const headerNav = [
   { display: "Home", path: "/" },
-  { display: "Movie", path: "/movie" },
-  { display: "TV Series", path: "/series" },
+  { display: "Catalog", path: "/catalog" },
 ];
 
 const Header = () => {

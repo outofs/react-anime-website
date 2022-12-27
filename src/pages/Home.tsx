@@ -28,6 +28,22 @@ const Home = () => {
 
         <div className="section mb-3">
           <div className="section__header mb-2">
+            <h2>Award Winning</h2>
+
+            <Link to="/movie">
+              <OutlineButton className="small">View More</OutlineButton>
+            </Link>
+          </div>
+          <MovieList
+            getMovies={useGetAnimeByGenreQuery}
+            page={1}
+            size={10}
+            genre={"Award Winning"}
+          />
+        </div>
+
+        <div className="section mb-3">
+          <div className="section__header mb-2">
             <h2>Slice of Life Genre</h2>
 
             <Link to="/movie">
