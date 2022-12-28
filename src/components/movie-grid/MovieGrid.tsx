@@ -18,7 +18,7 @@ const MovieGrid = () => {
   const [totalPages, setTotalPages] = useState(1);
   const [endPoint, setEndPoint] = useState<string>("");
   const [finalSearchEndpoint, setFinalSearchEndpoint] = useState("");
-  const [currentGenre, setCurrentGenre] = useState("");
+  const [currentGenre, setCurrentGenre] = useState("Action");
 
   const genresArr: string[] = [
     "Award Winning",

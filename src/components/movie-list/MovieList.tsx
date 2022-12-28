@@ -24,7 +24,6 @@ const MovieList = (props: MovieListPropsType) => {
 
   useEffect(() => {
     setItems(data?.data);
-    console.log(data);
   }, [isFetching]);
 
   if (isFetching) return <Loader title={"Loading movies"} />;
@@ -36,7 +35,6 @@ const MovieList = (props: MovieListPropsType) => {
       <Swiper grabCursor={true} spaceBetween={10} slidesPerView={"auto"}>
         {items?.map((item: AnimeCard, i) => (
           <SwiperSlide key={i}>
-            {/* <img src={`${item.image}`} alt="" /> */}
             <MovieCard item={item} />
           </SwiperSlide>
         ))}

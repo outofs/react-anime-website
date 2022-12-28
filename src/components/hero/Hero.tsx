@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../button/Button";
 import OutlineButton from "../button/OutlineButton";
 import "./hero.scss";
@@ -9,18 +10,24 @@ const Hero = () => {
       <div className="hero__item">
         <div className="hero__item__content container">
           <div className="hero__item__content__info">
-            <h2 className="title">Welcome to my Anime Website!</h2>
+            <h2 className="title">So... It's my Anime Website</h2>
             <div className="ovrview">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              sequi, voluptates obcaecati incidunt cupiditate vero rerum autem
-              eveniet voluptas architecto delectus illo inventore! Magni
-              molestiae obcaecati nesciunt, tempora deserunt provident!
+              <h3>
+                <p>
+                  “I actually don’t think something like perfection exists. That
+                  is I think why we are born able to absorb things… and by
+                  comparing ourselves with something else we can finally head in
+                  a good direction.”<br></br>
+                  <br />
+                </p>
+                <p></p>
+                <p> – Itachi Uchiha (Naruto)</p>
+              </h3>
             </div>
             <div className="btns">
-              <Button>Get Started!</Button>
-              <OutlineButton onClick={() => console.log("Go!")}>
-                Go!
-              </OutlineButton>
+              <Link to="/movie">
+                <Button>Let's start!</Button>
+              </Link>
             </div>
             {/* <div className="hero__item__content"></div> */}
           </div>

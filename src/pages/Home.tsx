@@ -2,7 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import OutlineButton from "../components/button/OutlineButton";
 import Hero from "../components/hero/Hero";
+import MovieCard from "../components/movie-card/MovieCard";
 import MovieList from "../components/movie-list/MovieList";
+import { AnimeCard } from "../interfaces";
 import {
   useGetTop10AnimeQuery,
   useGetAnimeByGenreQuery,
@@ -18,6 +20,7 @@ const Home = () => {
             <h2>Top 10 Anime</h2>
             <h4 style={{ fontWeight: 300 }}>by MyAnimeList.net</h4>
           </div>
+
           <MovieList
             getMovies={useGetTop10AnimeQuery}
             page={1}

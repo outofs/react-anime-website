@@ -1,11 +1,29 @@
-$body-bg: #0f0f0f;
+:root {
+  --bg--color: #000000;
+  --text--color: 255, 255, 255;
+  --box--shadow: 100, 100, 111, 0.2 0px 7px 29px 0px;
+  --white--var: 255, 255, 255;
+  --white--var--gradient: 255, 255, 255;
+  --black--var: 0, 0, 0;
+  --black--var--gradient: 0, 0, 0;
+}
+
+$body-bg: var(--bg--color);
+// $body-bg: #ffffff;
 $main-color: #ff0000;
-$text-color: #fff;
+$text-color: var(--text--color);
+// $text-color: rgb(0, 0, 0);
 
-$white: #fff;
-$black: #000;
+$white: var(--white--var);
+$white-gradient: var(--white--var--gradient);
+$black: var(--black--var);
+$black-gradient: var(--black--var--gradient);
 
-$box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+// $white: rgb(0, 0, 0);
+// $black: rgb(255, 255, 255);
+
+$box-shadow: var(--box--shadow);
+// $box-shadow: rgba(166, 166, 183, 0.2) 0px 7px 29px 0px;
 
 $header-height: 8rem;
 $header-shrink-height: 5rem;
@@ -13,4 +31,12 @@ $border-radius: 30px;
 $mobile-width: 600px;
 $tablet-width: 1024px;
 
-$font-family: "Montserrat", sans-serif;
+// $font-family: "Comfortaa", cursive;
+// $font-family: "Titillium Web", sans-serif;
+// $font-family: "Raleway", sans-serif;
+// $font-family: "Roboto Mono", monosp;
+// $font-family: "Nunito", sans-serif;
+// $font-family: "Chivo Mono", monospace;
+// $font-family: "Source Code Pro", monospace;
+// $font-family: "Rajdhani", sans-serif;
+$font-family: "Cinzel", sans-serif;

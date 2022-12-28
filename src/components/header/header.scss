@@ -40,7 +40,7 @@
   }
 
   &__nav {
-    @include flex(center, unset);
+    @include flex(center, center);
 
     & > * ~ * {
       margin-left: 2rem;

@@ -1,6 +1,7 @@
 import { any } from "prop-types";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Button from "../../components/button/Button";
 import Error from "../../components/error/Error";
 import Loader from "../../components/loader/Loader";
 import { AnimeCard } from "../../interfaces";
@@ -19,7 +20,7 @@ const Detail = () => {
 
   useEffect(() => {
     setItem(data);
-  }, [id]);
+  }, [isFetching]);
 
   if (isFetching) return <Loader title={"Loading movie"} />;
   if (error) return <Error />;
@@ -41,6 +42,12 @@ const Detail = () => {
             </div>
             <div className="movie-content__info">
               <h1 className="title">{item.title}</h1>
+              <div className="alt-title">
+                <h2>Alternative titles:</h2>
+                {item.alternativeTitles.map((title, i) => (
+                  <h3>{title}</h3>
+                ))}
+              </div>
               <div className="genres">
                 {item.genres.map((genre, i) => (
                   <span className="genres__item" key={i}>
@@ -48,7 +55,21 @@ const Detail = () => {
                   </span>
                 ))}
               </div>
+
               <p className="overview">{item.synopsis}</p>
+
+              <a className="link" href={item.link} target="_blank">
+                Visit on MyAnimeList.net
+              </a>
+
+              <div className="status-episodes">
+                <div className="status">
+                  <h3>Status: {item.status}</h3>
+                </div>
+                <div className="episodes">
+                  <h3>Episodes: {item.episodes}</h3>
+                </div>
+              </div>
             </div>
           </div>
         </>
