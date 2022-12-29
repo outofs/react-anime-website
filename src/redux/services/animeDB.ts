@@ -9,7 +9,8 @@ export const animeDbApi = createApi({
     prepareHeaders: (headers) => {
       headers.set(
         "X-RapidAPI-Key",
-        "892d604e95msh2b1855773043079p1887e2jsn5d59b0fb3285"
+        "345b01ea29msh5c5076bc876188dp131a82jsn3edc4a662631"
+        // "892d604e95msh2b1855773043079p1887e2jsn5d59b0fb3285"
       );
       return headers;
     },

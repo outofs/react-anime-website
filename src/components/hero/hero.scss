@@ -4,15 +4,17 @@
   margin-bottom: 3rem;
 
   &__item {
-    background-image: url("../../assets/1625687793_20-phonoteka-org-p-anime-art-kurenie-krasivo-21.png");
+    background-image: url("../../assets/Comp\ 1\ \(1\)_1.gif");
     padding: 9rem 0;
+    overflow: hidden;
     width: 100%;
     height: 100vh;
     position: relative;
-    background-position: center;
+    background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
+    background-color: transparent;
     display: flex;
 
     &::before {
@@ -42,6 +44,7 @@
     &__content {
       @include flex(center, center);
       padding: 0rem 5rem;
+      z-index: 1;
 
       &::after {
         content: "";
