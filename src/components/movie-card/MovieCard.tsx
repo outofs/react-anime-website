@@ -9,7 +9,7 @@ import Button from "../button/Button";
 
 const MovieCard = (props: AnimeCardProps) => {
   const item: AnimeCard = props.item;
-  const link = `/${item.type}/${item._id}`;
+  const link = `/react-anime-website/${item.type}/${item._id}`;
 
   return (
     <Link to={link}>
