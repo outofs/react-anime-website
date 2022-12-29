@@ -25,7 +25,7 @@ const Hero = () => {
               </h3>
             </div>
             <div className="btns">
-              <Link to="/movie">
+              <Link to="/react-anime-website/movie">
                 <Button>Let's start!</Button>
               </Link>
             </div>

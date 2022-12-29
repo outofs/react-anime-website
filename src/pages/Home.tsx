@@ -33,7 +33,7 @@ const Home = () => {
           <div className="section__header mb-2">
             <h2>Award Winning</h2>
 
-            <Link to="/movie">
+            <Link to="/react-anime-website/movie">
               <OutlineButton className="small">View More</OutlineButton>
             </Link>
           </div>
@@ -49,7 +49,7 @@ const Home = () => {
           <div className="section__header mb-2">
             <h2>Slice of Life Genre</h2>
 
-            <Link to="/movie">
+            <Link to="/react-anime-website/movie">
               <OutlineButton className="small">View More</OutlineButton>
             </Link>
           </div>
@@ -65,7 +65,7 @@ const Home = () => {
           <div className="section__header mb-2">
             <h2>Hentai</h2>
 
-            <Link to="/movie">
+            <Link to="/react-anime-website/movie">
               <OutlineButton className="small">View More</OutlineButton>
             </Link>
           </div>
