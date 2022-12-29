@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="hero__item">
         <div className="hero__item__content container">
           <div className="hero__item__content__info">
-            <h2 className="title">So... It's my Anime Website</h2>
+            <h2 className="title">So... It's my Anime Website </h2>
             <div className="ovrview">
               <h3>
                 <p>
