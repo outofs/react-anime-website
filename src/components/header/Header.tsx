@@ -7,8 +7,8 @@ import "../../scss/_variables.scss";
 import "../../scss/_mixin.scss";
 
 const headerNav = [
-  { display: "Home", path: "/" },
-  { display: "Catalog", path: "/catalog" },
+  { display: "Home", path: "/react-anime-website/" },
+  { display: "Catalog", path: "/react-anime-website/catalog" },
 ];
 
 const Header = () => {
