@@ -63,7 +63,7 @@ const Home = () => {
 
         <div className="section mb-3">
           <div className="section__header mb-2">
-            <h2>Hentai</h2>
+            <h2>Horror</h2>
 
             <Link to="/react-anime-website/movie">
               <OutlineButton className="small">View More</OutlineButton>
@@ -73,7 +73,7 @@ const Home = () => {
             getMovies={useGetAnimeByGenreQuery}
             page={1}
             size={10}
-            genre={"Hentai"}
+            genre={"Horror"}
           />
         </div>
       </div>
