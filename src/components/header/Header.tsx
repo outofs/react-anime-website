@@ -7,7 +7,7 @@ import "../../scss/_variables.scss";
 import "../../scss/_mixin.scss";
 
 const headerNav = [
-  { display: "Home", path: "/react-anime-website/" },
+  { display: "Home", path: "/react-anime-website" },
   { display: "Catalog", path: "/react-anime-website/catalog" },
 ];
 
@@ -114,7 +114,7 @@ const Header = () => {
             src={require("../../assets/1200px-Sharingan_triple.png")}
             alt=""
           />
-          <Link to="/">Sanime</Link>
+          <Link to="/react-anime-website">Sanime</Link>
         </div>
         <ul className="header__nav">
           {headerNav.map((e, i) => (

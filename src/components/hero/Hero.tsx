@@ -29,7 +29,6 @@ const Hero = () => {
                 <Button>Let's start!</Button>
               </Link>
             </div>
-            {/* <div className="hero__item__content"></div> */}
           </div>
         </div>
       </div>

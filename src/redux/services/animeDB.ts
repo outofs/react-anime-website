@@ -1,6 +1,22 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { UniqueESSymbolType } from "typescript";
 import { Genre, DataType, AnimeCard } from "../../interfaces";
+
+const apiKeys: string[] = [
+  "345b01ea29msh5c5076bc876188dp131a82jsn3edc4a662631",
+  "892d604e95msh2b1855773043079p1887e2jsn5d59b0fb3285",
+  "b142f6a0a3mshc1334d2d0468312p12b89cjsnbe97a4d4746b",
+];
+
+function getRandomInt(max: number) {
+  return Math.floor(Math.random() * max);
+}
+
+function randomApiKey(): string {
+  const indexOfApi = getRandomInt(apiKeys.length);
+  return apiKeys[indexOfApi];
+}
+
+console.log(randomApiKey());
 
 export const animeDbApi = createApi({
   reducerPath: "animeDbApi",
@@ -9,8 +25,8 @@ export const animeDbApi = createApi({
     prepareHeaders: (headers) => {
       headers.set(
         "X-RapidAPI-Key",
-        "345b01ea29msh5c5076bc876188dp131a82jsn3edc4a662631"
-        // "892d604e95msh2b1855773043079p1887e2jsn5d59b0fb3285"
+        "b142f6a0a3mshc1334d2d0468312p12b89cjsnbe97a4d4746b"
+        // randomApiKey()
       );
       return headers;
     },

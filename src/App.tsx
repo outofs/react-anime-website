@@ -16,6 +16,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/react-anime-website/" element={<Home />} />
+        <Route path="/react-anime-website" element={<Home />} />
         <Route
           path="/react-anime-website/:category/search/:keyword"
           element={<Catalog />}

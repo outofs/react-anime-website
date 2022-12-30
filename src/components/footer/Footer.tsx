@@ -12,29 +12,29 @@ const Footer = () => {
               src={require("../../assets/1200px-Sharingan_triple.png")}
               alt=""
             />
-            <Link to="/">Sanime</Link>
+            <Link to="/react-anime-website">Sanime</Link>
           </div>
         </div>
         <div className="footer__content__menus">
           <div className="footer__content__menu">
-            <Link to="/">Home</Link>
-            <Link to="/">Contact us</Link>
-            <Link to="/">Term of services</Link>
-            <Link to="/">About us</Link>
+            <Link to="/react-anime-website">Home</Link>
+            <Link to="/react-anime-website">Contact us</Link>
+            <Link to="/react-anime-website">Term of services</Link>
+            <Link to="/react-anime-website">About us</Link>
           </div>
 
           <div className="footer__content__menu">
-            <Link to="/">Live</Link>
-            <Link to="/">FAQ</Link>
-            <Link to="/">Premium</Link>
-            <Link to="/">Privacy policy</Link>
+            <Link to="/react-anime-website">Live</Link>
+            <Link to="/react-anime-website">FAQ</Link>
+            <Link to="/react-anime-website">Premium</Link>
+            <Link to="/react-anime-website">Privacy policy</Link>
           </div>
 
           <div className="footer__content__menu">
-            <Link to="/">You must watch</Link>
-            <Link to="/">Recent release</Link>
-            <Link to="/">Top Anime</Link>
-            <Link to="/"> About us</Link>
+            <Link to="/react-anime-website">You must watch</Link>
+            <Link to="/react-anime-website">Recent release</Link>
+            <Link to="/react-anime-website">Top Anime</Link>
+            <Link to="/react-anime-website"> About us</Link>
           </div>
         </div>
       </div>
