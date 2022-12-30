@@ -59,7 +59,7 @@ const MovieGrid = () => {
 
   useEffect(() => {
     setItems(searchData?.data);
-    setCurrentGenre("");
+    // setCurrentGenre("");
   }, [finalSearchEndpoint]);
 
   useEffect(() => {
