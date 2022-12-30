@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-anime-website/static/css/main.763e02bf.css",
-    "main.js": "/react-anime-website/static/js/main.c03098c4.js",
+    "main.js": "/react-anime-website/static/js/main.6beab9bf.js",
     "static/media/Comp 1 (1)_1.gif": "/react-anime-website/static/media/Comp 1 (1)_1.4a8764aa70be92bbe856.gif",
     "static/media/png": "/react-anime-website/static/media/4e4e8fb1cecce9ea482cc48cc08da052.f47ce41a639b78d81812.png",
     "static/media/1200px-Sharingan_triple.png": "/react-anime-website/static/media/1200px-Sharingan_triple.af832a8d44ac89b797a6.png",
@@ -9,10 +9,10 @@
     "static/media/sharingan.gif": "/react-anime-website/static/media/sharingan.dd79a1ca05d3693024aa.gif",
     "index.html": "/react-anime-website/index.html",
     "main.763e02bf.css.map": "/react-anime-website/static/css/main.763e02bf.css.map",
-    "main.c03098c4.js.map": "/react-anime-website/static/js/main.c03098c4.js.map"
+    "main.6beab9bf.js.map": "/react-anime-website/static/js/main.6beab9bf.js.map"
   },
   "entrypoints": [
     "static/css/main.763e02bf.css",
-    "static/js/main.c03098c4.js"
+    "static/js/main.6beab9bf.js"
   ]
 }
